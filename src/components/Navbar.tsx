@@ -35,6 +35,14 @@ export default function Navbar() {
       >
         Posts
       </NavLink>
+      <NavLink
+        to="/tasks"
+        className={({ isActive }) =>
+          isActive ? "font-bold text-fuchsia-600" : "text-amber-800"
+        }
+      >
+        Tasks
+      </NavLink>
     </nav>
   );
 }
